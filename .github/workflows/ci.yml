@@ -7,10 +7,7 @@ name: CI
 # yamllint disable-line rule:truthy
 on:
   pull_request: {}
-  push:
-    branches:
-      - main
-      - master
+  push: {}
 
 concurrency:
   group: ${{ github.ref_name }}
